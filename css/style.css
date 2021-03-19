@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:"Revalia";
+    src: url("../font/Revalia.woff2") format("woff2");
+}
+
+@font-face{
+    font-family:"Roboto";
+    src: url("../font/Roboto.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Roboto";
+    src: url("../font/Roboto2.woff2") format("woff2");
+}
+body{
+    font-family: "Roboto";
+    font-size: 16px;
+}
+/* --------------------------------START HEADER------------------------------------ */
+header{
+    height: 700px;
+    background: #EEEFF1;
+    padding: 0 calc(50% - 490px);
+    color: black;
+}
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
+}
+.logo{
+    font-family: "Revalia", cursive;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #34547A;
+}
+nav>.elements-menu{
+    display: flex;
+}
+nav>.elements-menu>.el-menu{
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-left: 42px;
+}
+.el-menu>a{
+    text-decoration: none;
+    color: black;
+}
+.el-menu>a:hover{
+    color:#34547A;
+}
+.btn{
+    background: #34547A;
+    height: 65px;
+    width: 225px;
+    border: none;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+}
+.main-header{
+    margin-top: 166px;
+    display: flex;
+}
+.main-header>.right-side{
+margin-left: 142px;
+}
+.title1{
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.txt{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+/* --------------------------------START section about------------------------------------ */
+section.about{
+    text-align: center;
+    white-space: pre-line;
+    padding-top: 119px;
+    padding-bottom: 20px;
+}
+.title2{
+    font-weight: bold;
+    font-size: 32px;
+}
+/* --------------------------------START section projects------------------------------------ */
+section.projects{
+    background: #34547A;
+    height: 250px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.project-el{
+    display: flex;
+    align-items: center;
+    white-space: pre-line;
+    width: 141px;
+    justify-content: space-between;
+}
+section.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    height: 653px;
+    padding-bottom: 60px;
+}
+section.skills>.right-side>img{
+    width: 555px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+section.video{
+    text-align: center;
+    white-space: pre-line;
+    padding-top: 119px;
+    padding-bottom: 20px;
+}
+.title_video{
+    position: relative;
+    font-weight: bold;
+    font-size: 32px;
+}
+.text_video{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+section.microsoft{
+    height: 250px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: ;
+}
+.microsoft-el{
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+}
+.vk{
+    background: #34547A;
+    height: 250px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.vk-right{
+    display: flex;
+    align-items: center;
+    white-space: pre-line;
+    width: 141px;
+    justify-content: space-between;
+}
+    
+
+
+
+
