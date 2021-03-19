@@ -173,7 +173,15 @@ section.microsoft{
     justify-content: space-between;
 }
     
-
+.gallery{
+     display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+}
+img.gallery-el{
+    width: 100%;
+    
+}
 
 
 
