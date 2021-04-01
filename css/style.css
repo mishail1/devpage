@@ -22,7 +22,7 @@ body{
 }
 /* --------------------------------START HEADER------------------------------------ */
 header{
-    height: 700px;
+    min-height: 700px;
     background: #EEEFF1;
     padding: 0 calc(50% - 490px);
     color: black;
@@ -125,7 +125,6 @@ section.skills{
 section.skills>.right-side>img{
     width: 555px;
     margin-left: 100px;
-    margin-right: 100px;
 }
 section.video{
     text-align: center;
@@ -182,6 +181,33 @@ img.gallery-el{
     width: 100%;
     
 }
+@media (max-width: 1130px) and (min-width: 600px){
+    section.skills>.right-side>img{
+        width: 40vw;
+        margin-left: 0;
+        margin-top: 5vw;
+    }
+    .top-header, section.skills, .main-header, .project-el {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-header,.main-header{
+        text-align: center;
+    }
+    .main-header>.right-side{
+        margin-left: 0;
+    }
+    .main-header>.right-side{
+        margin-left: 0;
+    }
+    nav>.elements-menu>.el-menu{
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+    
 
-
-
+}
+.video_{
+    width: 100%;
+}
