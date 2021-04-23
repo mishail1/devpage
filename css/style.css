@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 @font-face{
     font-family:"Revalia";
@@ -103,16 +104,18 @@ section.projects{
     background: #34547A;
     height: 250px;
     color: white;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
     align-items: center;
+    justify-items: center;
 }
 .project-el{
+    width: 141px;
     display: flex;
     align-items: center;
-    white-space: pre-line;
-    width: 141px;
-    justify-content: space-between;
+    justify-content: normal;
+    
 }
 section.skills{
     display: flex;
@@ -185,7 +188,7 @@ img.gallery-el{
 @media (max-width:668px) {
 
     section.skills>.right-side>img{
-        width: 40vw;
+        width: 30vw;
         margin-left: 0;
         margin-top: 5vw;
     }
@@ -208,7 +211,7 @@ img.gallery-el{
         margin-left: 3vw;
     }
 }
-@media (max-width:200px) {
+@media (min-width:200px) {
     section.skills>.right-side>img{
         width: 30vw;
         margin-left: 0;
@@ -238,4 +241,56 @@ img.gallery-el{
         padding: 0 calc(50% - 490px);
         color: black;
     }
+    nav>.elements-menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-side>img{
+        width: 50vw;
+    }
+    section.projects{
+        display: none;
+    }
+    .base-line-skill>img{
+        width: 60vw;
+    }
 }
+.item_menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .item_menu:hover {
+    background: lightgray;
+  }
+  
+  .burger-menu {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    width: 160px;
+    margin: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /*использую, чтобы меню лежало над элементами section*/
+    z-index: 1;
+  }
+  
+  .menu-btn {
+    margin: 1%;
+    width: 50px;
+    height: 50px;
+    background: url("../img/menu.png") no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .box {
+    margin: 0 auto;
+    width: 18%;
+  }
+  

@@ -11,21 +11,20 @@
 </head>
 <body>
     
-    <header>
+    <header id="header">
 
         <div class="top-header">
 
             <div class="logo">WD</div>
 
-            <nav class="header-menu">
-                <ul class="elements-menu">
-                    <li class="el-menu" class="elpe"><a href="#skills">Навыки</a></li>
-                    <li class="el-menu"><a href="#section-about">Об авторе</a></li>
-                    <li class="el-menu"><a href="#projects">Работы</a></li>
-                    <li class="el-menu"><a href="#">Процесс</a></li>
-                    <li class="el-menu"><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
+        <input class="menu-btn" type="button" onclick="burg()">
+        <nav class="burger-menu" id="burger" onclick="burg()">
+
+      <div class="item_menu"><a href="#">Шапка</a></div>
+      <div class="item_menu"><a href="#">Обо мне</a></div>
+      <div class="item_menu"><a href="#">Контакты</a></div>
+
+    </nav>
 
         </div>
 
@@ -215,5 +214,6 @@
 
 
 
+    <script src="js/main.js"></script>
 </body>
 </html>
